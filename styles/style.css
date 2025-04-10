@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -69,7 +69,6 @@ ol {
   width: 711px;
   height: 402px;
   padding-bottom: 16px;
-  object-fit: fill;
   position: relative;
 }
 
@@ -121,7 +120,6 @@ ol {
   border: unset;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: #ffffffb2; /* inherit Свойство наследуется от родителя*/
   font-family: inherit;
   font-weight: 400;
   font-size: inherit;
@@ -164,9 +162,15 @@ input[type="checkbox"]:checked + span {
   outline-offset: 1px;
   outline: 1px solid #fff;
 }
-
-.search-form__label-text:hover {
+/* .search-form__label-text:hover {
   text-decoration: underline;
+}*/
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .button {
@@ -225,7 +229,7 @@ input[type="checkbox"]:checked + span {
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow: overlay;
+  overflow: auto;
 }
 
 .content__list {
@@ -242,6 +246,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -256,21 +261,16 @@ input[type="checkbox"]:checked + span {
   outline: none;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__video-card:active {
+.content__card-link:active {
   background: #545050;
 }
 
 .content__video-card:focus-visible {
   border: 1px solid #fff;
-}
-
-.content__card-link_current {
-  display: block;
-  background: #545050;
 }
 
 .content__video-card-description-container {
@@ -281,7 +281,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -300,6 +300,7 @@ input[type="checkbox"]:checked + span {
 
 .content__video-card-thumbnail {
   object-fit: cover;
+  object-position: center;
   width: 194px;
   height: 103px;
   flex-shrink: 0;
@@ -310,6 +311,8 @@ input[type="checkbox"]:checked + span {
   margin-top: 30px;
 }
 
-.error {
+/* Исправлено. Блок ошибок не трогаем.
+.error { 
   margin-bottom: 16px;
 }
+*/
