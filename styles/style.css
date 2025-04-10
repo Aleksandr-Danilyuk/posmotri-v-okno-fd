@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -50,7 +50,7 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 /* Мои стили */
@@ -76,7 +76,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .search-form {
@@ -89,7 +89,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
 }
@@ -97,7 +97,6 @@ ol {
 .search-form__label {
   display: flex;
   width: fit-content;
-  box-shadow: none;     /* Не отабатывает*/
   align-items: center;
 }
 
@@ -122,11 +121,11 @@ ol {
   border: unset;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: #ffffffb2;			/* inherit Свойство наследуется от родителя*/
-  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #ffffffb2; /* inherit Свойство наследуется от родителя*/
+  font-family: inherit;
   font-weight: 400;
-  font-size: 18px;
-  background-color: transparent;	/* прозрачный фон вместо белого */
+  font-size: inherit;
+  background-color: transparent; /* прозрачный фон вместо белого */
 }
 
 .search-form__textfield:focus {
@@ -152,14 +151,13 @@ ol {
   height: 19px;
   margin-right: 5px;
   vertical-align: middle;
-  border: 1px solid #fff; 
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-self: center;
 }
 
-
-input[type='checkbox']:checked + span {
+input[type="checkbox"]:checked + span {
   max-width: 19px;
   max-height: 19px;
   background-color: #fff;
@@ -207,10 +205,8 @@ input[type='checkbox']:checked + span {
 .content__details {
   grid-column: 2;
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
   width: 399px;
-  /*width: 100%;  Проверить в финале */
-  /* height: 100%;  Проверить в финале */
   gap: 26px;
 }
 
@@ -228,11 +224,11 @@ input[type='checkbox']:checked + span {
 
 .content__list-container {
   position: relative;
-  height: 298px; 
+  height: 298px;
   overflow: overlay;
 }
 
-.content__list { 
+.content__list {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -303,8 +299,7 @@ input[type='checkbox']:checked + span {
 }
 
 .content__video-card-thumbnail {
-  object-fit: cover;  /* лишнее */
-  object-position: center; /* лишнее */
+  object-fit: cover;
   width: 194px;
   height: 103px;
   flex-shrink: 0;
