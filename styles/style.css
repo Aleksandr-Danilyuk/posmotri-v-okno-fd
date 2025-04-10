@@ -81,6 +81,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .search-form__fieldset {
@@ -90,6 +91,7 @@ ol {
 .search-form__fieldset-title {
   font-family: inherit;
   font-weight: 400;
+  padding-bottom: 5px;
   font-size: 18px;
 }
 
@@ -210,8 +212,9 @@ input[type="checkbox"]:checked + span {
   grid-column: 2;
   display: flex;
   flex-direction: column;
-  width: 399px;
-  gap: 26px;
+  width: 401px;
+  gap: 20px;
+  margin-bottom: 7px;
 }
 
 .title {
