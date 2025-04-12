@@ -59,7 +59,6 @@ ol {
   display: grid;
   gap: 30px;
   align-items: end;
-  height: 536px;
 }
 
 .result {
@@ -69,7 +68,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   position: relative;
 }
 
@@ -82,7 +81,6 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1px;
 }
 
 .search-form__fieldset {
@@ -292,7 +290,6 @@ input[type="checkbox"]:checked + span {
   text-transform: uppercase;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-top: -3px; /* по макету */
 }
 
 .content__video-card-description {
